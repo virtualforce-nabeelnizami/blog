@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @profile.name %>
+</p>
+
+<p>
+  <b>Adress:</b>
+  <%= @profile.adress %>
+</p>
+<% unless @profile.user_assets.blank? %>
+    <%= image_tag(@profile.user_assets.first.photo.url) %>
+<% end %>
+
+<%= link_to 'Edit', edit_profile_path(@profile) %> |
+<%= link_to 'Back', profiles_path %>
