@@ -4,9 +4,9 @@ Blog::Application.routes.draw do
 
  
 
-  resources :profiles do
-    resources :user_asset
-  end
+  resources :profiles 
+   
+  
 
   devise_for :users
    devise_scope :user do
@@ -17,7 +17,10 @@ Blog::Application.routes.draw do
   resources :posts do
   resources :comments
 end
-
+  
+ resources :users do
+  resources :profiles
+end
 
 
   # The priority is based upon order of creation:

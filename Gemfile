@@ -6,9 +6,9 @@ gem 'therubyracer'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'pg'
+gem 'mysql'
 gem "paperclip", "~> 3.0"
-gem 'sphinx'
+
 
 
 # Gems used only for assets and not required
@@ -24,6 +24,8 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'thinking-sphinx', '2.0.13'
+
 
 
 # To use ActiveModel has_secure_password

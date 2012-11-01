@@ -1,31 +1,47 @@
-<h1>Listing posts</h1>
-<%- if user_signed_in? %> <%= current_user.email %><%else%>I am not logged in<%end%>
-<%= link_to 'Profile', profiles_path %>
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Title</th>
-    <th>Content</th>
-    <th>Type</th>
-    <th></th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+
+
+<div class ="listing">
+  <h1>Listing posts</h1>
+</div>
 
 <% @posts.each do |post| %>
-  <tr>
-    <td><%= post.name %></td>
-    <td><%= post.title %></td>
-    <td><%= post.content %></td>
-    <td><%= post.type %></td>
-    <td><%= link_to 'Show', post %></td>
-    <td><%= link_to 'Edit', edit_post_path(post) %></td>
-    <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
+
+  <div class ="post">
+    <div class ="post-left">
+      <%=  image_tag 'nophoto.png'%>
+    </div>
+    <div class ="post-mid">
+      <div class="ptitle">
+        <p><%= post.title %></p>
+      </div>
+      <div class="pname">
+        <p><%= post.name %></p>
+      </div>
+      
+      <div class="pcontent">
+        <p><%=h truncate(post.content, :length => 180)%></p>
+      </div>
+      <div class="ptype">
+        <span>Category: </span><p><%= post.category_id %></p>
+      </div>
+    </div>
+    <% if user_signed_in? %>
+    <div class ="post-right">
+     <div class ="showbtn"><%= link_to 'Show', post %></div>
+     <div class ="showbtn"><%= link_to 'Edit', edit_post_path(post) %></div>
+     <div class ="showbtn"><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></div>
+    </div>
+    <% end %>
+  </div>
 <% end %>
-</table>
+
+<div class ="postbtn">
+  <% if user_signed_in? %>
+  <%= link_to 'New Post', new_post_path %>
+  <% end %>
+  <%= link_to "Home", 'home/index' %>
+</div>
 
 <br />
 
-<%= link_to 'New Post', new_post_path %>
+

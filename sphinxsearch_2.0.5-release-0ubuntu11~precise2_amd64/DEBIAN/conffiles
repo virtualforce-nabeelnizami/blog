@@ -1,0 +1,3 @@
+/etc/init/sphinxsearch.conf
+/etc/sphinxsearch/sphinx.conf
+/etc/default/sphinxsearch

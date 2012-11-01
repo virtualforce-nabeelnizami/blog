@@ -1,25 +1,44 @@
-<h1>Listing profiles</h1>
-<%- if user_signed_in? %> <%= current_user.email %><%else%>I am not logged in<%end%>
-<%= link_to 'Posts', posts_path %>
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Adress</th>
-    <th></th>
-    <th></th>
-  </tr>
+<div class ="listing"><h1>Listing profiles</h1></div>
+<div class ="username">
+  <%= link_to 'Post', posts_path %>
+</div>
 
-<% @profiles.each do |profile| %>
-  <tr>
-    <td><%= profile.name %></td>
-    <td><%= profile.adress %></td>
-    <td><%= link_to 'Show', profile %></td>
-    <td><%= link_to 'Edit', edit_profile_path(profile) %></td>
-    <td><%= link_to 'Destroy', profile, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
-</table>
 
-<br />
+<div class="profile">
+  <div class="left_profile">
+  <div class="profile_name_img">
 
+    <%= image_tag @profile.photo %>
+    </div>
+  </div>
+  <div class="right_profile">
+    
+<div class="profile_name">
+    <span> <%= current_user.first_name %> &nbsp<%= current_user.last_name %></span>
+    </div>
+    
+    
+  <div class="profile_name">
+    <span> <%= @profile.adress %></span>
+    </div>
+  <div class="profile_name">
+    <p> <%= @profile.intro %></p>
+    </div>
+   <% if user_signed_in? %>
+    <div class ="linkbtns" style ="margin-left: 10px !important;">
+     <div class ="backbtn"><%= link_to 'Show', @profile %></div>
+     <div class ="backbtn"><%= link_to 'Edit', edit_profile_path(@profile) %></div>
+      <div class ="backbtn"><%= link_to 'Delete', @profile, method: :delete, data: { confirm: 'Are you sure?' } %></div>
+      <div class ="backbtn"><%= link_to "Dashboard", {:controller => "profiles", :action => "dashboard", :id => current_user.id }%></div>
+</div>
+    <% end %>
+  </div>
+</div>
+
+
+<div class="postbtn">
+  <% if @profile.blank? %>
 <%= link_to 'New Profile', new_profile_path %>
+  <% end %>
+<%= link_to "Home", 'home/index' %>
+</div>

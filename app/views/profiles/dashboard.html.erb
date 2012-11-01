@@ -1,0 +1,35 @@
+<div class ="listing"><h1>Dashboard For<%= current_user.fullname %></h1></div>
+
+
+<div class ="dashboard">
+  <div class="dashboard_left">
+    <div class="left_dash_links">
+<%= link_to 'New Post', new_post_path %> <br />
+<%= link_to "My Blog", posts_path %> <br />
+<%= link_to "All Blogs", {:controller => "home", :action => "index"}%>
+    </div>
+  </div>
+
+  <div class="dashboard_mid">
+  <div class ="listing"><h1>Number of posted Blogs by <%= current_user.fullname %> : <%= current_user.posts.count %> </h1></div>
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>

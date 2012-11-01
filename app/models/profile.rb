@@ -1,5 +1,6 @@
 class Profile < ActiveRecord::Base
-  attr_accessible :adress, :name
+  attr_accessible :adress, :photo, :intro
+  has_attached_file :photo
   belongs_to :user
-  has_many :user_assets
+  
 end

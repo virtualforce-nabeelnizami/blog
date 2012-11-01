@@ -1,17 +1,33 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Name:</b>
-  <%= @profile.name %>
-</p>
+<div class="profile">
+  <div class="left_profile">
+  <div class="profile_name_img">
 
-<p>
-  <b>Adress:</b>
-  <%= @profile.adress %>
-</p>
-<% unless @profile.user_assets.blank? %>
-    <%= image_tag(@profile.user_assets.first.photo.url) %>
+    <% unless @profile.photo.blank? %>
+    <%= image_tag(@profile.photo.url) %>
 <% end %>
-
+    </div>
+  </div>
+   <div class="right_profile">
+     <div class="profile_name">
+    <span> <%= @profile.user.first_name %> &nbsp
+<%= @profile.user.last_name %></span>
+    </div>
+<div class="profile_name">
+    <span> <%= @profile.adress %></span>
+    </div>
+  <div class="profile_name">
+    <p> <%= @profile.intro %></p>
+    </div>
+</div>
+  </div>
+<% if user_signed_in? %>
+<div class ="username">
+  <%= link_to 'Post', posts_path %>
+</div>
+<div class="postbtn">
 <%= link_to 'Edit', edit_profile_path(@profile) %> |
-<%= link_to 'Back', profiles_path %>
+<%= link_to 'Back', profiles_path %> 
+</div>
+<% end %>

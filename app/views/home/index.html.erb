@@ -1,2 +1,81 @@
-<h1>Welcome</h1>
-<%= link_to "My Blog", posts_path %>
+<div class ="notice"><p id="notice"><%= notice %></p></div>
+<div class="listing"><h1>Welcome</h1></div>
+<div class="search">
+<%= form_tag posts_path, :method => :get do %>
+<%= text_field_tag :search, params[:search] %>
+<%= submit_tag "Search", :name => nil %>
+<% end %>
+</div>
+<div class ="myblog"><%if user_signed_in?%><%= link_to "My Blog", posts_path %><%  end%></div>
+<% @posts.each do |post| %>
+  <div class ="blog">
+    <div class ="blog-left">
+      <%= image_tag "nophoto.png" %>
+    </div>
+    <div class ="blog-mid">
+
+      <div class="btitle">
+        <p><%= post.title %></p>
+      </div>
+      <div class="bname">
+        <p><%= post.name %></p>
+
+      </div>
+      <div class="bcontent">
+        <p><%=h truncate(post.content, :length => 180)%></p>
+        <%= link_to "[see more...]", {:controller => "posts", :action => "show", :id => post.id }%>
+      </div>
+      <div class="bcat">
+        <span>Category: </span><p><%= post.category_id %></p>
+      </div>
+    </div>
+    <div class ="blog-right">
+    </div>
+  </div>
+<% end %>
+
+<div class ="bloggers">
+<%# unless @user.blank?%>
+<%@users.each do |f|%>
+  <div class="bloggers_info">
+<% profile = f.profile %>
+    <div class="left_blogger">
+    <%= image_tag profile.photo.url %>
+    </div>
+    <div class ="right_blogger">
+    <div class="blogger_fname"><%= f.first_name %></div>
+    <div class="blogger_fname"><%= f.last_name %></div>
+      <div class="blogger_intro">
+      <p><%=h truncate(profile.intro, :length => 100)%></p>
+      <%= link_to "[see more...]", {:controller => "profiles", :action => "show", :id => profile.id }%>
+    </div>
+    </div>
+</div>
+<%end%>
+<%#end%>
+</div>
+
+
+
+
+
+
+
+
+
+<%# @users.each do |user| %>
+    <%# puts user.profile %>
+    <%#*<div class="pname">%>
+<%#= user.first_name %>&nbsp;
+<%# @users.profile.each do |user| %>
+  <%#= image_tag user.profile.first.photo.url %>
+<%# end %>
+    <%#*</div>%>
+  <%# end %>
+  <%# @profile.each do |profile| %>
+    <%# if profile.photo.blank? %>
+    <%# image_tag 'nophoto.png' %>
+    <%#else%>
+    <%#= image_tag profile.photo %>
+    <%# end %>
+    <%# end %>

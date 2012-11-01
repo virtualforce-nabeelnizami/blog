@@ -34,4 +34,9 @@ Blog::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+config.gem(
+  'thinking-sphinx', :version => '1.4.10'
+)
+
+
 end

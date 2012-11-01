@@ -4,7 +4,7 @@
 # Be sure to use new-style password hashing:
 #   http://dev.mysql.com/doc/refman/5.0/en/old-client.html
 development:
-  adapter: postgresql
+  adapter: mysql
   encoding: utf8
   database: blog_development
   pool: 5
@@ -23,8 +23,12 @@ development:
 #  timeout: 5000
 #
 #production:
-#  adapter: jdbcmysql
-#  database: db/development.sqlite3_production
+#  adapter: mysql
+#  encoding: utf8
+#  database: blog_development
 #  pool: 5
+#  host: localhost
+#  username: root
+#  password: 1234
 #  timeout: 5000
-
+#

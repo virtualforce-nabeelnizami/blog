@@ -1,53 +1,62 @@
-<p id="notice"><%= notice %></p>
+<div class ="notice"><p id="notice"><%= notice %></p></div>
 
-<p>
-  <b>Name:</b>
-  <%= @post.name %>
-</p>
+<div class ="post">
+  <div class ="post-left">
+    <%=  image_tag 'nophoto.png'%>
+  </div>
+  <div class ="post-mid">
+    <div class="ptitle">
+      <p> <%= @post.title %></p>
+    </div>
+    <div class="pname">
+      <p><%= @post.name %></p>
+    </div>
 
-<p>
-  <b>Title:</b>
-  <%= @post.title %>
-</p>
-
-<p>
-  <b>Content:</b>
-  <%= @post.content %>
-</p>
-<p>
-  <b>Type:</b>
-  <%= @post.type %>
-</p>
-
-<h2>Comments</h2>
+    <div class="pcontent">
+      <p><%= @post.content %></p>
+    </div>
+    <div class="ptype">
+      <span>Category: </span><p><%= @category.category_name %></p>
+    </div>
+  </div>
+  <% if user_signed_in? %>
+  <div class ="linkbtns">
+  <div class ="backbtn"><%= link_to 'Edit Post', edit_post_path(@post) %></div>
+  <div class ="backbtn"><%= link_to 'Back to Posts', posts_path %></div>
+</div>
+  <% end %>
+</div>
+<div class ="listing"><h2>Comments</h2></div>
 <% @post.comments.each do |comment| %>
-  <p>
-    <b>Commenter:</b>
-    <%= comment.commenter %>
-  </p>
-
-  <p>
-    <b>Comment:</b>
-    <%= comment.body %>
-  </p>
+  <div class="comments">
+    <div class ="comment_name">
+      <p>
+        <%= comment.commenter %>
+      </p>
+    </div>
+    <div class ="comment_content">
+      <p>
+        <%= comment.body %>
+      </p>
+    </div>
+  </div>
 <% end %>
+<% if user_signed_in? %>
 
-<h2>Add a comment:</h2>
+<div class ="listing"><h2>Add a comment:</h2></div>
 <%= form_for([@post, @post.comments.build]) do |f| %>
-  <div class="field">
-    <%= f.label :commenter %><br />
+  <div class="name">
+    <%= f.label :commenter %>
     <%= f.text_field :commenter %>
   </div>
-  <div class="field">
-    <%= f.label :body %><br />
+  <div class="name">
+    <%= f.label :body %>
     <%= f.text_area :body %>
   </div>
-  <div class="actions">
+  <div class="actions" style ="margin-left: 391px !important">
     <%= f.submit %>
   </div>
 <% end %>
-
-<br />
-
-<%= link_to 'Edit Post', edit_post_path(@post) %> |
-<%= link_to 'Back to Posts', posts_path %> |
+<% else %>
+<div class ="backbtn"><%= link_to "Home", '/home/index' %></div>
+<% end %>

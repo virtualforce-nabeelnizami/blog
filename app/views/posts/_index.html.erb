@@ -1,0 +1,46 @@
+
+<div class ="username">
+<%- if user_signed_in? %> <span>Welcome</span> <p><%= current_user.email %></p><%end%>
+<%= link_to 'Profile', profiles_path %>
+</div>
+<div class ="listing">
+  <h1>Listing posts</h1>
+</div>
+<div class ="post_table">
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Title</th>
+    <th>Content</th>
+    <th>Post_Type</th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @posts.each do |post| %>
+  <tr>
+    <td><%= post.name %></td>
+    <td><%= post.title %></td>
+    <td><%= post.content %></td>
+    <td><%= post.post_type %></td>
+    <td><%= link_to 'Show', post %></td>
+    <td><%= link_to 'Edit', edit_post_path(post) %></td>
+    <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+</div>
+<div class ="postbtn">
+  <%= link_to 'New Post', new_post_path %>
+</div>
+<div class="search">
+    <%= form_tag posts_path, :method => :get do %>
+        <%= text_field_tag :search, params[:search] %>
+      <%= submit_tag "Search", :name => nil %>
+    <% end %>
+</div>
+<br />
+
+
