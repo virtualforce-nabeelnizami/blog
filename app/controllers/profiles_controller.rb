@@ -7,7 +7,7 @@ class ProfilesController < ApplicationController
     #  if user_signed_in?
     if current_user.profile.blank?
       respond_to do |format|
-        format.html { render action: "new" }
+        format.html { redirect_to new_profile_path }
         format.json { render json: @profile.errors, status: :unprocessable_entity }
       end
     else
@@ -38,8 +38,10 @@ class ProfilesController < ApplicationController
   # GET /profiles/new
   # GET /profiles/new.json
   def new
+    puts "y-----------------------hehhhhhere is profile  ---#{@profile.inspect}"
+ 
     @profile = Profile.new
-
+ puts "y-----------------------hehhhhhere is profile  ---#{@profile.inspect}"
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @profile }

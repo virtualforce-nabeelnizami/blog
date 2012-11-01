@@ -26,7 +26,7 @@
         <%= link_to "[see more...]", {:controller => "posts", :action => "show", :id => post.id }%>
       </div>
       <div class="bcat">
-        <span>Category: </span><p><%= post.category_id %></p>
+        <span>Category: </span><p><%= post.category.category_name %></p>
       </div>
     </div>
     <div class ="blog-right">
@@ -35,12 +35,17 @@
 <% end %>
 
 <div class ="bloggers">
-<%# unless @user.blank?%>
+
 <%@users.each do |f|%>
+<% unless f.profile.blank?%>
   <div class="bloggers_info">
 <% profile = f.profile %>
     <div class="left_blogger">
+      <% if profile.photo.blank? %>
+      <%= image_tag 'nophoto.png' %>
+      <% else %>
     <%= image_tag profile.photo.url %>
+      <% end %>
     </div>
     <div class ="right_blogger">
     <div class="blogger_fname"><%= f.first_name %></div>
@@ -52,7 +57,7 @@
     </div>
 </div>
 <%end%>
-<%#end%>
+<%end%>
 </div>
 
 
@@ -63,19 +68,3 @@
 
 
 
-<%# @users.each do |user| %>
-    <%# puts user.profile %>
-    <%#*<div class="pname">%>
-<%#= user.first_name %>&nbsp;
-<%# @users.profile.each do |user| %>
-  <%#= image_tag user.profile.first.photo.url %>
-<%# end %>
-    <%#*</div>%>
-  <%# end %>
-  <%# @profile.each do |profile| %>
-    <%# if profile.photo.blank? %>
-    <%# image_tag 'nophoto.png' %>
-    <%#else%>
-    <%#= image_tag profile.photo %>
-    <%# end %>
-    <%# end %>

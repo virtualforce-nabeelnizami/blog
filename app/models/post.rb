@@ -4,7 +4,7 @@ class Post < ActiveRecord::Base
   validates :title, :presence => true,
     :length => { :minimum => 5 }
   has_many :comments
-  has_one :category
+  belongs_to :category
   belongs_to :user
 
   define_index do

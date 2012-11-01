@@ -24,7 +24,7 @@ class PostsController < ApplicationController
   # GET /posts/1.json
   def show
     @post = Post.find(params[:id])
-    @category = Category.find(params[:id])
+#    @category = Category.find(params[:category])
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @post }
@@ -48,7 +48,7 @@ class PostsController < ApplicationController
 
     #@post = Post.where(['user_id = ? AND author_id <> ?', current_user.id, current_user.id])
     @post = Post.find(params[:id])
-    @category = Category.find(params[:id])
+#    @category = Category.find(params[:id])
     unless @post.user_id == current_user.id
       redirect_to root_path, notice: "You are not authorize to do this operation" and return
     end
@@ -78,7 +78,7 @@ class PostsController < ApplicationController
   # PUT /posts/1.json
   def update
     @post = Post.find(params[:id])
-    @category = Category.find(params[:id])
+#    @category = Category.find(params[:id])
     @post.user_id = current_user.id
     @post.name = current_user.fullname
     respond_to do |format|

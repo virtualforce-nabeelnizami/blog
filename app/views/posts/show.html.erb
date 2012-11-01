@@ -16,7 +16,7 @@
       <p><%= @post.content %></p>
     </div>
     <div class="ptype">
-      <span>Category: </span><p><%= @category.category_name %></p>
+      <span>Category: </span><p><%= @post.category_id %></p>
     </div>
   </div>
   <% if user_signed_in? %>

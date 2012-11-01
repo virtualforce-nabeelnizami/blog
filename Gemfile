@@ -6,9 +6,9 @@ gem 'therubyracer'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'mysql'
+#gem 'mysql'
 gem "paperclip", "~> 3.0"
-
+gem 'pg'
 
 
 # Gems used only for assets and not required
