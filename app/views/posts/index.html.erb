@@ -22,7 +22,7 @@
         <p><%=h truncate(post.content, :length => 180)%></p>
       </div>
       <div class="ptype">
-        <span>Category: </span><p><%= post.category_id %></p>
+        <span>Category: </span><p><%= post.category.category_name %></p>
       </div>
     </div>
     <% if user_signed_in? %>
