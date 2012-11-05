@@ -3,9 +3,9 @@ class Post < ActiveRecord::Base
   validates :name,  :presence => true
   validates :title, :presence => true,
     :length => { :minimum => 5 }
-  has_many :comments
-  belongs_to :category
-  belongs_to :user
+  has_many :comments, :foreign_key => 'post_id'
+  belongs_to :category , :foreign_key => 'category_id'
+  belongs_to :user, :foreign_key => 'user_id'
 
   define_index do
     indexes :category_id, :sortable => true

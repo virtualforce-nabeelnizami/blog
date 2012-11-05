@@ -8,8 +8,8 @@ class User < ActiveRecord::Base
   # Setup accessible (or protected) attributes for your model
   attr_accessible :first_name, :last_name, :email, :password, :password_confirmation, :remember_me
   # attr_accessible :title, :body
-  has_many :posts
-  has_one :profile
+  has_many :posts , :foreign_key => 'user_id'
+  has_one :profile , :foreign_key => 'user_id'
 def fullname
   [first_name, last_name].reject{|v| v.blank?}.join(" ")
 end
