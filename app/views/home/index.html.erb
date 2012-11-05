@@ -48,11 +48,9 @@
       <% end %>
     </div>
     <div class ="right_blogger">
-    <div class="blogger_fname"><%= f.first_name %></div>
-    <div class="blogger_fname"><%= f.last_name %></div>
+    <div class="blogger_fname"><%= link_to f.first_name , {:controller => "profiles", :action => "show", :id => profile.id }%>&nbsp;<%= link_to f.last_name , {:controller => "profiles", :action => "show", :id => profile.id }%></div>
       <div class="blogger_intro">
       <p><%=h truncate(profile.intro, :length => 100)%></p>
-      <%= link_to "[see more...]", {:controller => "profiles", :action => "show", :id => profile.id }%>
     </div>
     </div>
 </div>

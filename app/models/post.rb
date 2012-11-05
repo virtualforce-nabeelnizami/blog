@@ -9,6 +9,7 @@ class Post < ActiveRecord::Base
 
   define_index do
     indexes :category_id, :sortable => true
+    indexes :name, :sortable => true
   end
 #  def self.search(search)
 #  if search

@@ -14,13 +14,13 @@
 ActiveRecord::Schema.define(:version => 20121101063237) do
 
   create_table "categories", :force => true do |t|
-    t.string   "category_name"
+    t.text     "category_name"
     t.datetime "created_at",    :null => false
     t.datetime "updated_at",    :null => false
   end
 
   create_table "comments", :force => true do |t|
-    t.string   "commenter"
+    t.text     "commenter"
     t.text     "body"
     t.integer  "post_id"
     t.datetime "created_at", :null => false
@@ -31,8 +31,8 @@ ActiveRecord::Schema.define(:version => 20121101063237) do
 
   create_table "posts", :force => true do |t|
     t.integer  "user_id"
-    t.string   "name"
-    t.string   "title"
+    t.text     "name"
+    t.text     "title"
     t.text     "content"
     t.integer  "category_id"
     t.datetime "created_at",  :null => false
@@ -40,14 +40,14 @@ ActiveRecord::Schema.define(:version => 20121101063237) do
   end
 
   create_table "profiles", :force => true do |t|
-    t.string   "adress"
-    t.string   "photo_file_name"
+    t.text     "adress"
+    t.text     "photo_file_name"
     t.integer  "photo_file_size"
-    t.string   "photo_content_type"
+    t.text     "photo_content_type"
     t.integer  "user_id"
     t.datetime "created_at",         :null => false
     t.datetime "updated_at",         :null => false
-    t.string   "intro"
+    t.text     "intro"
   end
 
   create_table "users", :force => true do |t|
@@ -63,8 +63,8 @@ ActiveRecord::Schema.define(:version => 20121101063237) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at",                             :null => false
     t.datetime "updated_at",                             :null => false
-    t.string   "first_name"
-    t.string   "last_name"
+    t.text     "first_name"
+    t.text     "last_name"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true

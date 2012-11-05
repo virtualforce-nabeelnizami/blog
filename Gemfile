@@ -9,7 +9,7 @@ gem 'therubyracer'
 #gem 'mysql'
 gem "paperclip", "~> 3.0"
 gem 'pg'
-
+gem 'taps'
 
 # Gems used only for assets and not required
 # in production environments by default.
