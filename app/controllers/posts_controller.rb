@@ -5,6 +5,7 @@ class PostsController < ApplicationController
     if params[:search].blank?
       if user_signed_in?
         @posts = current_user.posts
+        
       else
         @posts = Post.all
       end
