@@ -27,6 +27,7 @@ gem 'jquery-rails'
 gem 'thinking-sphinx', '2.0.13'
 
 
+gem 'riddle'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

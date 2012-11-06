@@ -8,7 +8,7 @@ class Post < ActiveRecord::Base
   belongs_to :user, :foreign_key => 'user_id'
 
   define_index do
-    indexes :category_id, :sortable => true
+#    indexes :category_id, :sortable => true
     indexes :name, :sortable => true
     indexes :title, :sortable => true
   end

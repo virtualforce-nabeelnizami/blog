@@ -5,3 +5,4 @@ development:
  min_infix_len: 3
  port: 9312
  sql_range_step: 10000000
+ use_64_bit: true
