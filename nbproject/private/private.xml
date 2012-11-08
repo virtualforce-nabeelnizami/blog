@@ -1,3 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?><project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/1"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/1">
+        <file>file:/home/nabeelnizami/nabeel/projects/blog/app/views/posts/show.html.erb</file>
+        <file>file:/home/nabeelnizami/nabeel/projects/blog/app/views/posts/_form.html.erb</file>
+        <file>file:/home/nabeelnizami/nabeel/projects/blog/app/views/home/index.html.erb</file>
+        <file>file:/home/nabeelnizami/nabeel/projects/blog/app/controllers/profiles_controller.rb</file>
+        <file>file:/home/nabeelnizami/nabeel/projects/blog/app/models/post.rb</file>
+        <file>file:/home/nabeelnizami/nabeel/projects/blog/config/database.yml</file>
+        <file>file:/home/nabeelnizami/nabeel/projects/blog/app/controllers/posts_controller.rb</file>
+        <file>file:/home/nabeelnizami/nabeel/projects/blog/app/models/category.rb</file>
+        <file>file:/home/nabeelnizami/nabeel/projects/blog/app/controllers/home_controller.rb</file>
+        <file>file:/home/nabeelnizami/nabeel/projects/blog/db/migrate/20121004122230_create_posts.rb</file>
+        <file>file:/home/nabeelnizami/nabeel/projects/blog/config/development.sphinx.conf</file>
+        <file>file:/home/nabeelnizami/nabeel/projects/blog/config/sphinx.yml</file>
+    </open-files>
 </project-private>

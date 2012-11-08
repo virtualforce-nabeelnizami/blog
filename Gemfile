@@ -7,7 +7,7 @@ gem 'therubyracer'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 #gem 'mysql'
-gem "paperclip", "~> 3.0"
+gem "paperclip", "3.3.0"
 gem 'pg'
 gem 'taps'
 
