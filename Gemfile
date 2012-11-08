@@ -25,9 +25,10 @@ end
 
 gem 'jquery-rails'
 gem 'thinking-sphinx', '2.0.13'
+gem 'flying-sphinx'
 
-
-gem 'riddle'
+gem 'riddle' 
+#gem 'riddle', '0.9.9'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
