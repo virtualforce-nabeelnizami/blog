@@ -1,1 +1,562 @@
-body{background:#000}ul.hmenu{list-style:none;margin:0 0 2em;padding:0}ul.hmenu li{display:inline}body{background-color:#fff;color:#4a4a4a;font-family:verdana, arial, helvetica, sans-serif;font-size:13px;line-height:18px}p,ol,ul,td{font-family:verdana, arial, helvetica, sans-serif;font-size:13px;line-height:18px}pre{background-color:#eee;padding:10px;font-size:11px}a{color:#000}a:visited{color:#666}a:hover{color:#fff;background-color:#000}div.field,div.actions{margin-bottom:10px}#notice{color:green}.field_with_errors{padding:2px;background-color:red;display:table}#error_explanation{width:450px;border:2px solid red;padding:7px;padding-bottom:0;margin-bottom:20px;background-color:#f0f0f0}#error_explanation h2{text-align:left;font-weight:bold;padding:5px 5px 5px 15px;font-size:12px;margin:-7px;margin-bottom:0px;background-color:#c00;color:#fff}#error_explanation ul li{font-size:12px;list-style:square}#error_explanation login_menu{float:left;width:100%}root{display:block}body{background-color:#fff}.login_menu{float:right;width:36%}.login_menu ul{float:left;width:88%}.login_menu ul li{float:left;width:50%}.login_menu a{background-color:#8b8b8b;font-size:14px;font-weight:bold;text-align:center;color:#fff;margin-left:28px;float:left}.listing{width:60%;float:left}.listing h1{font-weight:bold;font-size:27px}.username{float:left;width:62%}.username span{font-size:18px;color:#000;font-weight:bold;width:100px;float:left}.username p{font-size:12px;font-style:italic;color:#6699CC;min-width:70px;float:left}.username a{background-color:#8b8b8b;font-size:14px;font-weight:bold;text-align:center;color:#fff}.post_table{float:left;width:100%;border:1px #000 solid}.post_table tr{float:left;width:100%}.post_table th{float:left;width:14%}.post_table td{float:left;width:14%;text-align:center}.post_table td a{background-color:#8b8b8b;font-size:14px;font-weight:bold;text-align:center;color:#fff}.search{float:left;width:100%;margin-top:10px}.postbtn{float:left;margin-bottom:10px;margin-top:10px;width:100%}.postbtn a{background-color:#8b8b8b;font-size:14px;font-weight:bold;text-align:center;color:#fff;padding:5px}.post{float:left;width:90%;border-bottom:1px #000 solid}.post-left{float:left;width:14%}.post-mid{float:left;width:60%}.post-right{float:left;width:26%}.pname{float:left;width:100%}.pname p{color:#cd0a0a}.ptitle p{color:#8b8b8b}.pcontent{float:left;width:100%}.pcontent p{float:left;width:95%;margin-top:1px}.ptype{float:left;width:100%}.ptype p{float:left;width:70%;margin-top:1px;color:#C83838;margin-left:10px}.ptype span{float:left}.showbtn{float:left;width:90px;margin-top:10px}.showbtn a{background-color:#8b8b8b;font-size:14px;font-weight:bold;text-align:center;color:#fff;padding:5px}.name{float:left;width:100%;margin-top:20px}.name label{float:left;margin-left:50px;width:15%}.name input{float:left;width:25%}.actions{float:left;width:50%;margin-left:433px;margin-top:20px}.backbtn{float:left;width:20%}.backbtn a{background-color:#8b8b8b;font-size:14px;font-weight:bold;text-align:center;color:#fff;padding:5px}.linkbtns{float:left;width:100%;margin-top:10px;margin-bottom:10px}.notice{float:left;width:100%}.show_name{float:left;width:100%}.comments{border:5px solid #6699CC;float:left;margin-left:151px;padding:5px;width:55%}.comment_name{float:left;width:20%}.comment_content{float:left;width:75%}.logo{float:left;width:50%;max-height:200px}.logo img{float:left;width:200px;height:200px}.blog{float:left;width:90%;border-bottom:1px #D0DCE0 solid;margin-top:10px}.blog-left{float:left;width:14%}.blog-left img{float:left;width:100px;height:100px}.blog-mid{float:left;width:60%}.blog-right{float:left;width:26%}.bname{float:left;width:100%}.bname p{color:#cd0a0a}.btitle{float:left;width:100%}.btitle p{color:#8b8b8b}.bcontent{float:left;width:100%}.bcontent p{float:left;width:95%;margin-top:1px}.bcat{float:left;width:100%}.bcat p{float:left;width:70%;margin-top:1px;color:#C83838;margin-left:10px}.bcat span{float:left}.profile{float:left;margin-top:20px;width:100%}.profile_name{float:left;width:100%}.profile_name p{float:left;width:70%;margin-top:1px;color:#C83838;margin-left:10px}.profile_name span{color:#A6C7E1;float:left;font-size:20px;margin-left:10px;margin-top:1px;width:70%}.profile_name_img{float:left;width:20%}.profile_name_img img{float:left;width:230px;height:230px;margin-left:10px}.left_profile{float:left;width:20%}.right_profile{float:left;width:70%}.bloggers_info{float:left;margin-top:10px;padding:5px;width:20%}.bloggers_info img{float:left;width:50px;height:50px}.blogger_fname{float:left;width:60px}.blogger_intro{float:left;width:150px}.left_blogger{float:left;width:70px}.right_blogger{float:left;width:150px}.myblog{float:left;width:100%}.myblog a{background-color:#8b8b8b;font-size:14px;font-weight:bold;text-align:center;color:#fff;margin-left:28px;float:left}.login_page{float:left;margin-left:448px;margin-top:35px;width:55%}.login_email{float:left;width:70%}.login_partials{float:left;width:60%}.login_action{float:left;width:45%;margin-top:20px}.dashboard{float:left;width:100%}.dashboard_left{float:left;width:25%}.dashboard_mid{float:left;width:75%}.left_dash_links{float:left;width:100%}.uploaded_img{float:left;margin-left:231px;width:70%}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+ */
+
+ body{background: #000;}
+ul.hmenu {
+  list-style: none;
+  margin: 0 0 2em;
+  padding: 0;
+}
+
+ul.hmenu li {
+  display: inline;
+}
+/* line 1, ../../app/assets/stylesheets/scaffolds.css.scss */
+body {
+  background-color: #fff;
+  color: #4a4a4a;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 9, ../../app/assets/stylesheets/scaffolds.css.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 15, ../../app/assets/stylesheets/scaffolds.css.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 21, ../../app/assets/stylesheets/scaffolds.css.scss */
+a {
+  color: #000;
+}
+/* line 23, ../../app/assets/stylesheets/scaffolds.css.scss */
+a:visited {
+  color: #666;
+}
+/* line 26, ../../app/assets/stylesheets/scaffolds.css.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 33, ../../app/assets/stylesheets/scaffolds.css.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 38, ../../app/assets/stylesheets/scaffolds.css.scss */
+#notice {
+  color: green;
+}
+
+/* line 42, ../../app/assets/stylesheets/scaffolds.css.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 48, ../../app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 55, ../../app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 65, ../../app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+/* line 69, ../../app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation login_menu {
+  float: left;
+  width: 100%;
+}
+/* 
+    Document   : style.css
+    Created on : Oct 22, 2012, 9:48:14 AM
+    Author     : nabeelnizami
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+
+root { 
+    display: block;
+}
+body
+{
+    background-color: #fff;
+}
+.login_menu {
+    float: right;
+    width: 36%;
+}
+.login_menu ul {
+    float: left;
+    width: 88%;
+}
+.login_menu ul li {
+    float: left;
+    width: 50%;
+}
+.login_menu a{
+    background-color: #8b8b8b;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    margin-left: 28px;
+    float: left;
+}
+.listing {
+    width: 60%;
+    float: left;
+}
+.listing h1 {
+    font-weight: bold;
+    font-size: 27px;
+}
+.username{
+    float: left;
+    width: 62%;
+}
+.username span {
+    font-size: 18px;
+    color: #000;
+    font-weight: bold;
+    width: 100px;
+    float: left;
+}
+.username p{
+    font-size: 12px;
+    font-style: italic;
+    color: #6699CC;
+    min-width: 70px;
+    float: left;
+}
+.username a {
+    background-color: #8b8b8b;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+}
+.post_table{
+    float: left;
+    width: 100%;
+    border: 1px #000 solid;
+}
+.post_table tr{
+    float: left;
+    width: 100%;
+
+}
+.post_table th{
+    float: left;
+    width: 14%;
+}
+.post_table td{
+    float: left;
+    width: 14%;
+    text-align: center;
+}
+.post_table td a{
+    background-color: #8b8b8b;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+}
+.search{
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+}
+.postbtn {
+    float: left;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 100%;
+}
+.postbtn a{
+    background-color: #8b8b8b;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    padding: 5px;
+
+}
+.post {
+    float: left;
+    width: 90%;
+    border-bottom: 1px #000 solid;
+}
+.post-left {
+    float: left;
+    width: 14%
+
+}
+.post-mid {
+    float: left;
+    width: 60%
+
+}
+.post-right {
+    float: left;
+    width:26%
+}
+.pname {
+    float: left;
+    width: 100%;
+}
+.pname p{
+    color: #cd0a0a
+}
+.ptitle p{
+    color: #8b8b8b;
+}
+.pcontent {
+    float: left;
+    width: 100%;
+}
+.pcontent p {
+    float: left;
+    width: 95%;
+    margin-top: 1px;
+}
+.ptype {
+    float: left;
+    width: 100%;
+}
+.ptype p {
+    float: left;
+    width: 70%;
+    margin-top: 1px;
+    color:#C83838;
+    margin-left: 10px;
+}
+.ptype span {
+    float: left;
+
+}
+.showbtn {
+    float: left;
+    width: 90px;
+    margin-top: 10px;
+}
+.showbtn a {
+    background-color: #8b8b8b;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    padding: 5px;
+
+}
+.name{
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+
+}
+.name label{
+    float: left;
+    margin-left: 50px;
+    width: 15%;
+}
+
+.name input {
+    float: left;
+    width: 25%;
+
+}
+.actions {
+    float: left;
+    width: 50%;
+    margin-left: 433px;
+    margin-top: 20px;
+
+}
+.backbtn {
+    float: left;
+    width: 20%;
+}
+.backbtn a {
+    background-color: #8b8b8b;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    padding: 5px;
+
+}
+.linkbtns {
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.notice {
+    float: left;
+    width: 100%;
+}
+.show_name{
+    float: left;
+    width: 100%;
+}
+.comments {
+    border: 5px solid #6699CC;
+    float: left;
+    margin-left: 151px;
+    padding: 5px;
+    width: 55%;
+}
+.comment_name {
+    float: left;
+    width: 20%;
+}
+.comment_content {
+    float: left;
+    width: 75%;
+}
+.logo {
+    float: left;
+    width: 50%;
+    max-height: 200px;
+}
+.logo img{
+    float: left;
+    width: 200px;
+    height: 200px;
+}
+.blog {
+    float: left;
+    width: 90%;
+    border-bottom: 1px #D0DCE0 solid;
+    margin-top: 10px;
+}
+.blog-left {
+    float: left;
+    width: 14%
+
+}
+.blog-left img {
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+.blog-mid {
+    float: left;
+    width: 60%
+
+}
+.blog-right {
+    float: left;
+    width:26%
+}
+.bname {
+    float: left;
+    width: 100%;
+}
+.bname p{
+    color: #cd0a0a
+}
+.btitle {
+    float: left;
+    width: 100%;
+}
+.btitle p{
+    color: #8b8b8b;
+}
+.bcontent {
+    float: left;
+    width: 100%;
+}
+.bcontent p {
+    float: left;
+    width: 95%;
+    margin-top: 1px;
+}
+.bcat {
+    float: left;
+    width: 100%;
+}
+.bcat p {
+    float: left;
+    width: 70%;
+    margin-top: 1px;
+    color:#C83838;
+    margin-left: 10px;
+}
+.bcat span {
+    float: left;
+
+}
+.profile{
+    float: left;
+    margin-top: 20px;
+    width: 100%;
+}
+.profile_name {
+    float: left;
+    width: 100%;
+}
+.profile_name p{
+    float: left;
+    width: 70%;
+    margin-top: 1px;
+    color:#C83838;
+    margin-left: 10px;
+}
+.profile_name span{
+    color: #A6C7E1;
+    float: left;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 1px;
+    width: 70%;
+}
+
+.profile_name_img {
+    float: left;
+    width: 20%;
+}
+.profile_name_img img{
+    float: left;
+    width: 230px;
+    height: 230px;
+    margin-left: 10px;
+}
+.left_profile{
+    float: left;
+    width: 20%
+}
+.right_profile{
+    float: left;
+    width: 70%
+}
+.bloggers_info {
+    float: left;
+    margin-top: 10px;
+    padding: 5px;
+    width: 20%;
+}
+.bloggers_info img {
+    float: left;
+    width: 50px;
+    height: 50px;
+}
+.blogger_fname {
+    float: left;
+    width: 60px;
+}
+.blogger_intro {
+    float: left;
+    width: 150px;
+}
+.blogger_intro p{
+
+}
+.left_blogger {
+    float: left;
+    width: 70px;
+}
+.right_blogger {
+    float: left;
+    width: 150px;
+}
+.myblog {
+    float: left;
+    width: 100%;
+}
+.myblog a{
+    background-color: #8b8b8b;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    margin-left: 28px;
+    float: left;
+}
+.login_page {
+    float: left;
+    margin-left: 448px;
+    margin-top: 35px;
+    width: 55%;
+}
+.login_email {
+    float: left;
+    width: 70%
+}
+.login_partials {
+    float: left;
+    width: 60%
+}
+.login_action {
+    float: left;
+    width: 45%;
+    margin-top: 20px;
+}
+.dashboard{
+    float: left;
+    width: 100%;
+}
+.dashboard_left {
+    float: left;
+    width: 25%;
+}
+.dashboard_mid {
+    float: left;
+    width: 75%;
+}
+.left_dash_links {
+    float: left;
+    width: 100%;
+}
+.uploaded_img{
+    float: left;
+    margin-left: 231px;
+    
+    width: 70%;
+}
