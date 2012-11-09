@@ -6,3 +6,6 @@ development:
  port: 9845
  sql_range_step: 10000000
  use_64_bit: true
+
+ production:
+  version: 1.10-beta
