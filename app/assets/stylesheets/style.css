@@ -330,6 +330,15 @@ body
     width: 95%;
     margin-top: 1px;
 }
+.bcontent a{
+    background-color: #8b8b8b;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    margin-left: 2px;
+    float: left;
+}
 .bcat {
     float: left;
     width: 100%;

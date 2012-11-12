@@ -23,7 +23,7 @@
       </div>
       <div class="bcontent">
         <p><%=h truncate(post.content, :length => 180)%></p>
-        <%= link_to "[see more...]", {:controller => "posts", :action => "show", :id => post.id }%>
+        <%= link_to "see more...", {:controller => "posts", :action => "show", :id => post.id }%>
       </div>
       <div class="bcat">
         <span>Category: </span><p><%= post.category.category_name %></p>
