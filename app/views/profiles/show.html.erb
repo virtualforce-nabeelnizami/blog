@@ -23,11 +23,11 @@
 </div>
   </div>
 <% if user_signed_in? %>
-<div class ="username">
-  <%= link_to 'Post', posts_path %>
+<div class ="username1">
+  <%= link_to 'New Post', posts_path %>
 </div>
 <div class="postbtn">
-<%= link_to 'Edit', edit_profile_path(@profile) %> |
+<%= link_to 'Edit', edit_profile_path(@profile) %> 
 <%= link_to 'Back', profiles_path %> 
 </div>
 <% end %>

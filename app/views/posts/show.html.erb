@@ -43,7 +43,7 @@
 <% end %>
 <% if user_signed_in? %>
 
-<div class ="listing"><h2>Add a comment:</h2></div>
+<div class ="listing"><h2>Post a comment:</h2></div>
 <%= form_for([@post, @post.comments.build]) do |f| %>
   <div class="name">
     <%= f.label :commenter %>
