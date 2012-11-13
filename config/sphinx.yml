@@ -7,6 +7,8 @@ development:
  sql_range_step: 10000000
  use_64_bit: true
  bin_path: /usr/local/bin
+ searchd_binary_name: searchd
+ indexer_binary_name: indexer
 
  production:
  enable_star: true
@@ -21,3 +23,5 @@ development:
  bin_path: /usr/local/bin
  version: '1.10-beta'
  bin_path: /usr/local/bin
+ searchd_binary_name: searchd
+ indexer_binary_name: indexer
