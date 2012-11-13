@@ -6,6 +6,7 @@ development:
  port: 9312
  sql_range_step: 10000000
  use_64_bit: true
+ bin_path: /usr/local/bin
 
  production:
  enable_star: true
@@ -19,3 +20,4 @@ development:
  min_prefix_len: 2
  bin_path: /usr/local/bin
  version: '1.10-beta'
+ bin_path: /usr/local/bin
