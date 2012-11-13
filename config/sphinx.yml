@@ -21,7 +21,7 @@ development:
  version: 1.10-beta
  min_prefix_len: 2
  bin_path: /usr/local/bin
- version: '1.10-beta'
+ version: 1.10-beta
  bin_path: /usr/local/bin
  searchd_binary_name: searchd
  indexer_binary_name: indexer
