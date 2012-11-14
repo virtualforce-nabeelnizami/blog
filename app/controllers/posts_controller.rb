@@ -12,6 +12,7 @@ class PostsController < ApplicationController
       
 
     else
+      logger.info "iiiiiiii m here \n\n\n"
       @posts = Post.search params[:search]
     
     end
